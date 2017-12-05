@@ -1,0 +1,53 @@
+As two Players,
+So we can play a personalised game of Battle,
+We want to Start a fight by entering our Names and seeing them
+
+  ###  Player 1 & Player 2 enter their names
+
+As Player 1,
+So I can see how close I am to winning
+I want to see Player 2's Hit Points
+
+  ###  Player 1 can see Player 2s HP
+
+As Player 1,
+So I can win a game of Battle,
+I want to attack Player 2, and I want to get a confirmation
+
+  ### Player 1 can attack Player 2 and it returns a confirmation
+
+As Player 1,
+So I can start to win a game of Battle,
+I want my attack to reduce Player 2's HP by 10
+
+  ### When player 1 attacks player 2 his HP is reduced by 10
+
+As two Players,
+So we can continue our game of Battle,
+We want to switch turns
+
+  ### After an action the players switch turns
+
+As Player 1,
+So I can see how close I am to losing,
+I want to see my own hit points
+
+  ### Player 1 can see their own HP
+
+As Player 1,
+So I can lose a game of Battle,
+I want Player 2 to attack me, and I want to get a confirmation
+
+  ### Player 2 can attack Player 1 and it returns a confirmation
+
+As Player 1,
+So I can start to lose a game of Battle,
+I want Player 2's attack to reduce my HP by 10
+
+  ### When player 2 attacks player 1 his HP is reduced by 10
+
+As a Player,
+So I can Lose a game of Battle,
+I want to see a 'Lose' message if I reach 0HP first
+
+  ### A player loses when his HP reaches 0

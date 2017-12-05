@@ -39,3 +39,12 @@ message = <start-line>
 Response Format:
 Status-Line = HTTP-Version SP Status-Code SP Reason-Phrase CRLF
 example: HTTP/1.1 200 OK
+
+
+Capybara
+
+"Capybara helps you test web applications by simulating how a real user would interact with your app."
+
+It is a web-based automation framework, which allows for automation of web applications for testing purposes.
+With this you can simulate how a user would interact with a web app, able to receive pages, parse the HTML and submit the forms.
+Advantages of Capybara include its ability to automate repeating and long running tasks on the web, and allows for modular tests which are easy to write and maintain
