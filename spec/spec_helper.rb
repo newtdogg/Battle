@@ -22,6 +22,7 @@ RSpec.configure do |config|
   require 'capybara'
   require 'capybara/rspec'
   require 'rspec'
+  require 'web_helpers.rb'
 
   Capybara.app = Battle
   # rspec-expectations config goes here. You can use an alternate

@@ -17,18 +17,28 @@ feature Battle do
   end
 
   scenario "players can enter their names" do
-    visit '/home'
-    fill_in('player_1_name', with: 'John')
-    fill_in('player_2_name', with: 'Dave')
-    click_button('submit')
+    sign_in_and_play
     expect(page).to have_content('John')
     expect(page).to have_content('Dave')
   end
 
   feature 'HP' do
     scenario "player 1 should be able to see Player 2's HP" do
-      visit '/battle'
+      sign_in_and_play
       expect(page).to have_content("health = 100")
+    end
+  end
+
+  feature 'attacking' do
+    scenario 'presents player 1 with the option to attack player 2' do
+      sign_in_and_play
+      expect(page).to have_link('Attack!')
+    end
+
+    scenario 'when player 1 attacks player 2 we are taken to the attack page' do
+      sign_in_and_play
+      click_link("Attack!")
+      expect(page).to have_content("Dave was attacked for some damage")
     end
   end
 end
