@@ -38,7 +38,13 @@ feature Battle do
     scenario 'when player 1 attacks player 2 we are taken to the attack page' do
       sign_in_and_play
       click_link("Attack!")
-      expect(page).to have_content("Dave was attacked for some damage")
+      expect(page).to have_content("Dave was attacked!")
+    end
+
+    scenario 'when player 1 attacks player 2, player 2s hp is reduced by 10' do
+      sign_in_and_play
+      click_link("Attack!")
+      expect($player_2.hp).to eq 80
     end
   end
 end
